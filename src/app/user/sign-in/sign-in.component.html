@@ -3,8 +3,12 @@
     <img class="logo" src="/assets/images/logo.png" />
     <div class="sign-in">Sign In</div>
     <div class="sub-text">to acquire awesome bots</div>
+
+    <!-- * Here we want to bind this input control to a property called "credentials"
+     *defined in sign-in.component.html ( credentials: IUserCredentials )-->
     <input name="email" [(ngModel)]="credentials.email" placeholder="Email Address"  type="text" />
-    <!-- the below code prints the value of credentials.email to prove 2-way binding works -->
+
+    <!-- * the below code prints the value of credentials.email to prove 2-way binding works -->
     {{credentials.email}}
 
     <input name="password" [(ngModel)]="credentials.password" placeholder="Password" type="password" />
